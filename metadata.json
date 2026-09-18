@@ -1,0 +1,6 @@
+{
+  "name": "Polar Workout Importer",
+  "description": "Chrome Extension (Manifest V3) to import phased target workouts from Polar Workout Generator into Polar Flow Web.",
+  "requestFramePermissions": ["clipboard-read", "clipboard-write"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Polar Workout Importer",
+  "version": "1.0.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjGIr4dKMHCamVWTc4RQ4d9Pdoo0ZvTMyMwrnd5s8+vS9KW5ZAReY5dg8IrK4nOEfUogJzUAWam21/H4cHvo/sh+L/Up+f2MVKXtB4jsPRNHqPHrbs8V7FayQ4oYU6IQ7uMnCPP+wRsqYHPWZ2rEV4EHS0INHJeySzbmCKttJpq/h7e6NEY6Ngq2wNB4+5CsQbGTvrooLF+G3MImm3+/6mRJmT5HOwGt5pfyqK1v4OuPMy8npm3H/KF+0qquEATix6ZoQxJLDaoG2cpoMnfz5RBmtplXwTTMqwTkEWfxXYF+KjY11s/7xtrlboiNzHBhqc0AFqST/Yev2tNH9un9lfQIDAQAB",
+  "description": "Automates creation of phased target workouts from Polar Workout Generator in Polar Flow Web.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "clipboardRead",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://flow.polar.com/*"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://polar-workout-generator.ai.studio/*"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Polar Workout Importer"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://flow.polar.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
