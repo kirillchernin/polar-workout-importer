@@ -7,8 +7,6 @@
   "permissions": [
     "storage",
     "tabs",
-    "clipboardRead",
-    "activeTab"
   ],
   "host_permissions": [
     "https://flow.polar.com/*"
