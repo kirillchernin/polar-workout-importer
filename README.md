@@ -70,26 +70,65 @@ bfaciogjibpdpphhpcjhgilfhhgoholo
 - **Generator Integration**: Directly connects to `https://polar-workout-generator.ai.studio/*` via `externally_connectable`, responding to `PING_POLAR_EXTENSION` and `CREATE_POLAR_WORKOUT`.
 
 ---
+Installation
 
-## Installation in Google Chrome
+The extension is not yet available in the Chrome Web Store.
 
-1. **Build Extension**:
-   ```bash
-   npm run build:ext
-   ```
-2. **Open Extensions in Chrome**:
-   Navigate to:
-   ```text
-   chrome://extensions/
-   ```
-3. **Enable Developer Mode**:
-   Toggle the **Developer mode** switch in the top-right corner to **ON**.
-4. **Load the Extension**:
-   - Click **Load unpacked** in the top-left corner.
-   - Select either the project root directory or the `dist-extension/` directory.
-5. **Pin Extension**:
-   Click the Extensions puzzle icon in Chrome's toolbar and pin **Polar Workout Importer**.
+To install it manually:
 
+1. Download this repository:
+   - Click **Code**
+   - Select **Download ZIP**
+
+2. Extract the downloaded ZIP file.
+
+3. Open Chrome and go to:
+   `chrome://extensions`
+
+4. Enable **Developer mode** in the top-right corner.
+
+5. Click **Load unpacked**.
+
+6. Select the extracted extension folder containing `manifest.json`.
+
+7. The **Polar Workout Importer** extension should now appear in Chrome.
+
+## Usage
+
+1. Log in to [Polar Flow](https://flow.polar.com/).
+2. Open the Polar Workout Generator.
+3. Generate or edit your workout.
+4. Click **Create in Polar Flow**.
+5. The extension will open Polar Flow and create the phased training target automatically.
+
+You do not need to open the extension popup during normal use.
+
+## Updating
+
+Until the extension is available in the Chrome Web Store, updates must be
+installed manually:
+
+1. Download the latest version from GitHub.
+2. Replace the old extension files with the new ones.
+3. Open `chrome://extensions`.
+4. Click **Reload** on Polar Workout Importer.
+
+## Privacy
+
+The extension does not request or store your Polar username or password.
+
+It operates on the Polar Flow page using your existing logged-in browser
+session.
+
+Polar account data and workout history are not sent to or stored by the
+extension developer.
+
+Technical extension state is stored locally in your browser.
+
+## Disclaimer
+
+This is an independent open-source project and is not affiliated with,
+endorsed by, or sponsored by Polar Electro.
 ---
 
 ## Technical Structure
