@@ -34,12 +34,16 @@ The extension is not yet available in the Chrome Web Store.
 
 To install it manually:
 
-1. Click **Code → Download ZIP** on this GitHub repository.
-2. Extract the ZIP file.
-3. Open Chrome and go to `chrome://extensions`.
-4. Enable **Developer mode**.
-5. Click **Load unpacked**.
-6. Select the extracted folder containing `manifest.json`.
+## Installation
+
+1. Download the latest pre-built extension from
+   **Releases → Latest release**.
+2. Download `polar-workout-importer-v1.0.0.zip`.
+3. Extract the ZIP.
+4. Open `chrome://extensions`.
+5. Enable **Developer mode**.
+6. Click **Load unpacked**.
+7. Select the extracted folder containing `manifest.json`.
 
 The **Polar Workout Importer** extension should now appear in Chrome.
 
